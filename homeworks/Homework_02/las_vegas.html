@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>COMP 1950 | BRUNA VIEIRA</title>
+	<meta name="description" content="Bruna Vieira's COMP 1950 course work">
+	<meta name="author" content="Bruna Vieira">
+
+	<!-- SET BASE URL -->
+	<!-- <base href="/" target="_self"> 
+	<!-- External Resources -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+</head>
+
+<body>
+		<div class="container">
+
+			<!-- SITE HEADER -->
+		<header>
+			<!-- HTML TAG -->
+			<a href="index.html"><img src="./images/header.jpg" alt="header"></a>
+			<a href="http://www.bcitcomp.ca/1950/"><strong>COMP 1950</strong></a>
+		</header>
+
+		<!-- Site Navigation -->
+		<nav>
+			<!-- HTML5 new tag -->
+			<a href="#" class="clearfix dropdown-handle">
+				<h2 id="subtitle">Love travel</h2>
+				</strong>
+				<strong class="dropbtn" onclick="myFunction()">&#9776;</strong>
+				<div class="dropdown">
+
+					<div class="dropdown-content" id="myDropdown">
+						<a href="./san_francisco.html">San Francisco</a>
+						<a href="./las_vegas.html">Las Vegas</a>
+
+					</div>
+				</div>
+				</ul>
+			</a>
+		</nav>
+
+
+
+		<!-- Site Content Start -->
+		<section id="introduction">
+			<article>
+				<h2>Vancouver</h2>
+
+				<figure class="city">
+					<img src="./images/home_page/image_02.jpg" alt="Las Vegas">
+					<figcaption>
+						<a href="./las_vegas.html" target="_blank" rel="nofollow">
+							<strong> Las Vegas </strong>
+						</a>
+					</figcaption>
+				</figure>
+
+				<p>Visiting Las Vegas is one of the unforgettable experiences for anyone. It is a place where (almost) everything is allowed.
+					Everything is aimed at entertainment, fun, making you spend money without worrying about tomorrow. The casinos do not
+					have windows, so you do not know the time of day. Everything is done to amuse you and you pay for it without question.</p>
+
+				<h2>Things to Do in Las Vegas</h2>
+				<ul>
+					<li>Red Rock Canyon National Conservation Area</li>
+					<li>Performances</li>
+					<li>High Roller</li>
+					<li>The Strip</li>
+					<li>Wynn Las Vegas Casino</li>
+					<li>Helicopter Tours</li>
+				</ul>
+
+
+				<h2>San Francisco</h2>
+				<ul>
+					<li><a href="http://joes.net/" target="_blank" rel="nofollow">Joe's Seafood, Prime Steak and Stone Crab </a></li>
+
+					<li><a href="https://fogodechao.com/location/las-vegas" target="_blank" rel="nofollow">Fogo de Chao Brazilian Steakhouse</a></li>
+
+				</ul>
+
+			</article>
+		</section>
+
+		<!--  SITE FOOTER  -->
+		<footer id="footer">
+			<!-- HTML5 new tag -->
+
+			<div class="back"><a href="#top">Back to Top</a></div>
+
+			<details>
+				<!-- HTML5 new tag -->
+				<summary>
+					<!-- HTML5 new tag -->
+					<i>Copyright</i> &copy; 2017 Designed by BRUNA VIEIRA A00985171</a>
+				</summary>
+				<a href="mailto:bruna.rv@gmail.com">bruna.rv@gmail.com</a>
+			</details>
+
+		</footer>
+
+		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<script>
+			/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function (event) {
+				if (!event.target.matches('.dropbtn')) {
+
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+</body>
+
+</html>

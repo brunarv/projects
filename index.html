@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Homework 4 </title>
+	
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="inner">
+			<h1>COMP 1950</h1>
+		</div>
+	</header>
+
+	  <!--Side Nav-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+				<li><a href="http://validator.w3.org/check?uri=referer">Referer link</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Banner -->
+		<section id="intro" class="main">
+			<span class="icon fa-diamond major"></span>
+			<h2>Welcome</h2>
+			<p>Thank you for visiting this blog. </p>
+			
+			<h1>COMP 1950 - HOMEWORK</h1>
+
+			<div class="homework">
+				<ul>          
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_01/index.html"><span class="label">Homework 01</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_02/index.html"><span class="label">Homework 02</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_03/Original_Bruna/index.html"><span class="label">Homework 03 - Bruna (Original CSS)</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_03/Alternate_by_sam/index.html"><span class="label">Homework 03 - Bruna (Alternate CSS by Sam)</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_03/Original_Sam/index.html"><span class="label">Homework 03 - Sam (Original CSS)</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_03/Alternate_by_bruna/index.html"><span class="label">Homework 03 - Sam (Alternate CSS by Bruna)</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_04/index.html"><span class="label">Homework 04</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_05/index.html"><span class="label">Homework 05</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_06/index.html"><span class="label">Homework 06</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="404.html"><span class="label">Homework 07</span></a></li>
+					<li class="icon fa-hand-o-right"><a href="homeworks/Homework_08/index.html"><span class="label">Homework 08</span></a></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<p class="copyright">Copyright &copy;  Design by Bruna Ramos Vieira A00985171</p>
+			
+			<p>Last modified: <!--#config timefmt="%B %d %Y, %I:%M %p" --> <!--#echo var="LAST_MODIFIED" --> </p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+
+	
+
+		// Disable animations/transitions until the page has loaded.
+			$('body').addClass('is-loading');
+
+			$(window).on('load', function() {
+				window.setTimeout(function() {
+					$('body').removeClass('is-loading');
+				}, 100);
+			});
+
+        //SlideDown the section
+		$( "#section" ).hide();
+			$( "#clickme" ).click(function () {
+				if ( $( "#section" ).is( ":hidden" ) ) {
+					$( "#section" ).slideDown( "slow" );
+				} else {
+					$( "#section" ).hide();
+				}
+			});
+	</script>
+
+</body>
+
+</html>

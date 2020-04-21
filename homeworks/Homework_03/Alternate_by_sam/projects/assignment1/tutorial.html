@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>COMP 1850 - Assignment 1</title>
+  <link rel="stylesheet" type="text/css" href="style\assignment.css" />
+</head>
+
+<body>
+	<div>	
+			<div id="main">
+			<div id="header">
+			<div id="logo">
+			<div id="logo_text">
+			  <!-- class="logo_colour", allows you to change the colour of the text -->
+			<h1><a href="index.html">COMP 1850 -<span class="logo_colour">Assignment 01</span></a></h1>
+			</div>
+			</div>
+	
+     <div id="menubar">
+				<ul id="menu">
+				  <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+				  <!--<li class="selected"></li> -->
+				  <li class="selected" ><a href="index.html">Home</a></li>
+				  <li><a href="tags.html">HTML tags</a></li>
+				  <li><a href="resources.html">Resources</a></li>
+				  <li><a href="tutorial.html">Tutorial</a></li>
+				  <li><a href="contact.html">Contact Us</a></li>
+				</ul>
+		  	</div>
+		</div>	
+	
+	<div id="content_header"></div>
+		<div id="site_content">
+		<div>
+		<h1>Hover Effect with CSS</h1>
+					<p>
+						So basically on this tutorial all we have to do is manipulate an image behaviour by hovering it.
+						This tutorial is very simple and very amusing I learned this from this site: 
+						<a href="http://fivera.net/	">Fivera.net</a>, they also have some other tutorials on how to create your website to become even more interactive,
+						though I only want to focus on this <em>hover</em> effect. So lets get started!
+					</p>
+			
+				<div>
+						<h2>Prepare the followings:</h2>	
+						<span>For HTML</span>
+							<ol>
+								<li>Image that can be use.</li>
+								<li>And of course this tag:<code>&lt;img src="http://link to the image"&gt;</code><br /></li>
+							</ol>				
+								
+							<span>For CSS	it can either be external or internal<br />	</span>
+							<ol>	
+								<li><code>img {here is the code of the initial state of the image}</code> and;</li>
+								<li><code>img:hover { here is the code of the hover state of the image}</code></li>
+							</ol>
+				</div>
+				<div>
+					<h2>Shrink Image on Hover</h2>
+						<div>
+							<p class="tcode">HTML codes:<br />
+								<code >
+									&lt;div style="text-align:center"><br />
+									&lt;img src="../images/s1.png" alt="fivera" width="200" height="200">
+								</code>
+							</p>
+						</div>
+						<div>
+							<p class="tcode">CSS codes:<br />
+								<code>
+									img {<br />
+  										height: 200px;<br />
+  										width: 200px;<br /><br />
+ 
+ 									    -webkit-transition: all 1s ease;<br />
+     									-moz-transition: all 1s ease;<br />
+       									-o-transition: all 1s ease;<br />
+      									-ms-transition: all 1s ease;<br />
+          								transition: all 1s ease;<br />
+									}<br /><br />
+
+									img:hover {<br />
+  										width: 5px;<br />
+  										height: 5px;<br />
+									}
+								</code>
+							</p>	
+						</div>
+				
+							<h2>Result</h2>
+							<img src="example.jpg" id="sample01">
+						
+				</div>	
+			
+			</div>
+    	</div>
+		</div>
+    	</div>
+
+
+    <div id="content_footer"></div>
+    <div id="footer">
+         <p>Copyright &copy; Bruna Ramos Vieira </p>
+    </div>
+  </div>
+
+	<script src="script.js"></script>
+</body>
+</html>

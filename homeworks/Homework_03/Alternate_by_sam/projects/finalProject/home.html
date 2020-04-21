@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<title>Chrystian Ramos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<body>
+	<div class = "header"> 
+		<header>
+			<img src="img/header.png" />	
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="bio.html">Biography</a></li>
+				<li><a href="shows.html">Shows</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="social.html">Social</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</header>
+	</div>		
+	<div class = "section1"> 
+		 <div class = "colum1">
+		 	<iframe width="660" height="515" src="https://www.youtube.com/embed/QPXiR-hRdh0?rel=0&autoplay=1" frameborder="0" allowfullscreen align="center"></iframe>	
+	 <p><a id="viewall1" href="videos.html">VIEW ALL VIDEOS</a></p>
+		 </div>
+		
+		 <div class = "colum2">
+		 	<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchrystianvramos%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" 
+					width="380" height="348" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		</div>
+
+
+	</div>	
+
+<div class="section2" >
+	<h1>Gallery</h1>
+		<center><img class="mySlides" src="gallery/gallery(8).jpg" style="width:20%"/></center>   
+        <center> <img class="mySlides" src="gallery/gallery(9).jpg" style="width:20%"/>   </center>
+        <center><img class="mySlides" src="gallery/gallery(12).jpg" style="width:20%"/> </center> 
+        <center><img class="mySlides" src="gallery/gallery(13).jpg"style="width:20%" /> </center>
+        
+
+        <a id="viewall2" href="gallery.html">VIEW ALL PHOTOS</a></p>	 
+    </div>
+
+
+	 
+
+
+      
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+				
+	 
+	
+	<div class = "section3"> 
+			
+			<h1>Shows</h1>
+			<table style="width:100%">
+			  <tr>
+			    <td><b>JUL 01</b></br>Campinas - SP</br></br></br></td>
+			    <td><b>JUL 02</b></br>Campinas - SP</br></br></td>
+			    <td><b>JUL 03</b></br>Campinas - SP</br></br></td>
+			  </tr>
+			  <tr>
+			    <td><b>JUL 08</b></br>Campinas - SP</br></br></td>
+			    <td><b>JUL 09</b></br>Campinas - SP</br></br></td>
+			    <td><b>JUL 10</b></br>Campinas - SP</br></br></td>
+			  </tr>
+			  <tr>
+			    <td><b>JUL 15</b></br>Campinas - SP</br></br></td>
+			    <td><b>JUL 16</b></br>Campinas - SP</br></br></td>
+			    <td><b>JUL 17</b></br>Campinas - SP</br></br></td>
+			  </tr>
+		</table>	
+		<p><a id="viewall3" href="shows.html">VIEW ALL DATE</a></p>
+	</div>
+	
+ <div class="footer">
+		 <p> © 2016 Bruna A00985171 </p>
+		 <a href="sitemap.html"> Site Map</a>
+	</div>
+    
+
+</body>
+</html>

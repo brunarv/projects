@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Homework 4 </title>
+	
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="inner">
+			<h1>Template Based CMS</h1>
+		</div>
+	</header>
+
+	  <!--Side Nav-->
+        <nav>
+            <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="../../index.html">COMP1950</a></li>
+				<li><a href="http://validator.w3.org/check?uri=referer">Referer link</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Banner -->
+		<section id="intro" class="main">
+			<span class="icon fa-diamond major"></span>
+			<h2>Welcome</h2>
+			<p>Thank you for visiting this blog. </p>
+			<p>	I've created <a href="https://brunahomework8.wordpress.com"> blog on Wordpress </a> with the follow customizations: </p>
+				<li> Added 4 posts</li> 
+				<li> Added 3 Widgets to the footer: a video, social media links and info section. </li> 
+				<li> Added a Widget to the side bar with a gallery images.</li> <br>
+			<p>To check my new blog, you just need to click on the button bellow.	</p> 
+
+		
+			<div id="notfound">
+				<a class="button" href="https://brunahomework8.wordpress.com" >Wordpress </a>
+			</div>
+		
+		</section>
+	
+		<!-- Items -->
+		<div id="section"> 
+		<section class="main items">
+			
+			<article class="item">
+				<header>
+					<a href="http://api.jquery.com/slideDown/#slideDown-duration-easing-complete"><img src="images/pic1.jpeg" alt="" /></a>
+					<h3>JQuery</h3>
+				</header>
+				<p> The slideDown() method reveals all matched elements by adjusting their height and firing an 
+					optional callback after completio</p>
+				<ul class="actions">
+					<li><a href="http://api.jquery.com/slideDown/#slideDown-duration-easing-complete" class="button">Learn More</a></li>
+				</ul>
+			</article>
+
+			<article class="item">
+				<header>
+					<a href="http://api.jquery.com/slideDown/#slideDown-duration-easing-complete"><img src="images/pic2.jpeg" alt="" /></a>
+					<h3>JQuery</h3>
+				</header>
+				<p>The slideDown() method reveals all matched elements by adjusting their 
+					height and firing an optional callback after completio</p> <br>
+				<ul class="actions">
+					<li><a href="http://api.jquery.com/slideDown/#slideDown-duration-easing-complete" class="button">Learn More</a></li>
+				</ul>
+			</article>
+		</section>
+	</div>
+	
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<p class="copyright">Copyright &copy;  Design by Bruna Ramos Vieira A00985171</p>
+			
+			<p>Last modified: <!--#config timefmt="%B %d %Y, %I:%M %p" --> <!--#echo var="LAST_MODIFIED" --> </p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+
+	
+
+		// Disable animations/transitions until the page has loaded.
+			$('body').addClass('is-loading');
+
+			$(window).on('load', function() {
+				window.setTimeout(function() {
+					$('body').removeClass('is-loading');
+				}, 100);
+			});
+
+        //SlideDown the section
+		$( "#section" ).hide();
+			$( "#clickme" ).click(function () {
+				if ( $( "#section" ).is( ":hidden" ) ) {
+					$( "#section" ).slideDown( "slow" );
+				} else {
+					$( "#section" ).hide();
+				}
+			});
+	</script>
+
+</body>
+
+</html>
